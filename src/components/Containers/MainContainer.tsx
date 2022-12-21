@@ -1,13 +1,11 @@
-import React, { ReactNode } from 'react'
+import React, {ReactNode} from 'react'
 
 type MainContainerProps = {
-    children: ReactNode
+  children: ReactNode
 }
 
 function MainContainer({children}: MainContainerProps) {
-  return (
-    <main className="container">{children}</main>
-  )
+  return <main className="container">{children}</main>
 }
 
 export default MainContainer
