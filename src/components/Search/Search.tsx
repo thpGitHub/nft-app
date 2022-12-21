@@ -1,7 +1,17 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
 
-function Search() {
-  return <input type="text" className="input-search" />
+type searchProp = {
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void
+}
+
+function Search({onChange}: searchProp) {
+  return (
+    <input
+      type="text"
+      className="input-search"
+      onChange={onChange}
+    />
+  )
 }
 
 export default Search
