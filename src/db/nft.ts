@@ -60,4 +60,4 @@ const nftsList: nftType[] = [
   },
 ]
 
-export {nftsList}
+export default nftsList
