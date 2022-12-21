@@ -4,6 +4,6 @@ import App from './App'
 
 test('renders Our Equilibrium collection', () => {
   render(<App />)
-  const element = screen.getByText(/Our Equilibrium collection/i)
+  const element = screen.getByText(/Our Equilibrium collection2/i)
   expect(element).toBeInTheDocument()
 })
