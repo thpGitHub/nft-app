@@ -12,18 +12,21 @@ function App() {
   const [allNftsFromApi, setAllNftsFromApi] = useState<nftType[]>([])
   const [displayNfts, setDisplayNfts] = useState<nftType[]>([])
 
-  // useEffect(() => {
-  //   const api = async () => {
-  //     const data = await fetch('https://636b20b6c07d8f936dae7fe4.mockapi.io/api/nft/all', {
-  //       method: 'GET',
-  //     })
-  //     const jsonData = await data.json()
-  //     console.log(jsonData)
-  //     setDisplayNfts(jsonData.data)
-  //     setAllNftsFromApi(jsonData.data)
-  //   }
-  //   api()
-  // }, [])
+  useEffect(() => {
+    const api = async () => {
+      const data = await fetch(
+        'https://636b20b6c07d8f936dae7fe4.mockapi.io/api/nft/all',
+        {
+          method: 'GET',
+        },
+      )
+      const jsonData = await data.json()
+      console.log(jsonData)
+      setDisplayNfts(jsonData.data)
+      setAllNftsFromApi(jsonData.data)
+    }
+    api()
+  }, [])
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
