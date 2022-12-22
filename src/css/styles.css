@@ -192,6 +192,17 @@ body {
 .attribution a:hover {
   color: var(--colour-cyan);
 }
+.alert {
+  width: min(87.5%, 22rem);
+  margin-right: auto;
+  margin-left: auto;
+  color: red;
+}
+.elements {
+  width: min(87.5%, 22rem);
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /* Media Queries */
 @media screen and (max-width: 300px) {
