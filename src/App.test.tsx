@@ -4,6 +4,6 @@ import App from './App'
 
 test('renders Formation TypeScript', () => {
   render(<App />)
-  const element = screen.getByText(/Formation TypeScript/i)
+  const element = screen.getByText(/Formation2 TypeScript/i)
   expect(element).toBeInTheDocument()
 })
