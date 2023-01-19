@@ -7,3 +7,4 @@ test('renders Formation TypeScript', () => {
   const element = screen.getByText(/Formation TypeScript/i)
   expect(element).toBeInTheDocument()
 })
+
